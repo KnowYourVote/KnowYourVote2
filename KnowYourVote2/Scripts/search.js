@@ -51,6 +51,7 @@ $(document).ready(function () {
                 for (var y = 0; y < response.offices[x].officialIndices.length; y++) {
                     document.getElementById('official-container').innerHTML +=
                     '<a href="' + response.officials[id].urls + '" target="blank_" class="thumbnail">' +
+                        '<img src= "' + response.officials[id].photoUrl + '"/>' +
                         '<h4>' + response.officials[id].name + '</h4>' +
                         '<p>Position: ' + response.offices[x].name + '</p>' +
                         '<p>Party: ' + response.officials[id].party + '</p>' +

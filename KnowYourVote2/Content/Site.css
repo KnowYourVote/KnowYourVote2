@@ -82,3 +82,8 @@ textarea {
     margin: 0;
     padding: 0;
 }
+
+#official-container img{
+    width: 180px;
+    height: 250px;
+}
