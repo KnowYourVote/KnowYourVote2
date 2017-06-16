@@ -3,6 +3,15 @@
     padding-bottom: 20px;
 }
 
+#main-body {
+    margin-top: 30px;
+    height: 70vh;
+}
+
+.search-col {
+    text-align: center;
+}
+
 /* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
@@ -61,7 +70,11 @@ textarea {
     font-size: 15px;
     font-weight: 300;
     text-overflow: ellipsis;
-    width: 300px;
+    width: 480px;
+}
+
+#search {
+    margin-top: 10px;
 }
 
 #pac-input:focus { border-color: #4d90fe; }
@@ -71,30 +84,22 @@ textarea {
 }
 
 .official-scroll {
-    width: 420px;
-    height:450px;
+    width: 510px;
+    height:410px;
     overflow:scroll;
     overflow-x:hidden;
 }
 
 /* Extra stuff */
 .thumbnail {
+    transform: translateX(20px);
     margin-bottom: 10px;
-    padding: 10px;
     text-decoration: none !important;
-    width: 400px;
-}
-
-.thumbnail:hover {
-    /*text-decoration: none;*/
-}
-
-.thumbnail h4, .thumbnail p {
-    margin: 0;
-    padding: 0;
+    width: 480px;
 }
 
 #official-container img{
-    width: 180px;
-    height: 250px;
+    transform: translateX(-15px);
+    max-width: 150px;
+    max-height: 200px;
 }
