@@ -50,10 +50,17 @@ $(document).ready(function () {
             var id = 0;
             for (var x = 0; x < response.offices.length; x++) {
                 for (var y = 0; y < response.offices[x].officialIndices.length; y++) {
+
+                    var image = response.officials[id].photoUrl;
+                    if (image === undefined)
+                    {
+                        image = "../Images/silhouette.png";
+                    }
+
                     document.getElementById('official-container').innerHTML +=
                     '<a href="' + response.officials[id].urls + '" target="blank_" class="thumbnail row">' +
                     '<div class="col-xs-4">' +
-                        '<img src= "' + response.officials[id].photoUrl + '"/>' +
+                        '<img src= "' + image + '"/>' +
                     '</div> <div class="col-xs-8">' +
                         '<h4>' + response.officials[id].name + '</h4>' +
                         '<p>Position: ' + response.offices[x].name + '</p>' +
@@ -78,13 +85,18 @@ $(document).ready(function () {
             console.log(response);
             var stateRegex = new RegExp("state:" + state);
             document.getElementById('election-container').innerHTML = '';
-            response.elections.forEach(function (entry) {
-                if (!/state:/.test(entry.ocdDivisionId) || stateRegex.test(entry.ocdDivisionId)) {
-                    //console.log(entry);
-                    document.getElementById('election-container').innerHTML +=
-                    '<div class="cell">' + entry.name + ' at ' + entry.electionDay + '</div>';
-                }
-            });
+
+            if (response.elections.length > 0) {
+                document.getElementById('election-container').innerHTML +=
+                    '<h4>We found some elections that might affect you</h4>';
+
+                response.elections.forEach(function (entry) {
+                    if (!/state:/.test(entry.ocdDivisionId) || stateRegex.test(entry.ocdDivisionId)) {
+                        document.getElementById('election-container').innerHTML +=
+                        '<div class="cell">' + entry.name + ' at ' + entry.electionDay + '</div>';
+                    }
+                });
+            }
         });
     }
 });
