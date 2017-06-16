@@ -66,6 +66,17 @@ textarea {
 
 #pac-input:focus { border-color: #4d90fe; }
 
+#official-container {
+    margin-top: 10px;
+}
+
+.official-scroll {
+    width: 420px;
+    height:450px;
+    overflow:scroll;
+    overflow-x:hidden;
+}
+
 /* Extra stuff */
 .thumbnail {
     margin-bottom: 10px;

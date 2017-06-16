@@ -30,6 +30,10 @@ function initAutocomplete() {
 }
 
 $(document).ready(function () {
+    $("#search").click(function () {
+        searchResult();
+    });
+
     $("#pac-input").keypress(function (e) {
         if (e.which == 13) {
             searchResult();
@@ -37,14 +41,11 @@ $(document).ready(function () {
         }
     });
 
-    $("#search").click(function () {
-        searchResult();
-    });
-
     function searchResult() {
         var locLink = "https://www.googleapis.com/civicinfo/v2/representatives?key=AIzaSyBRTWesCWcZoIiBVFxanm3BPBkUmOdSbW8&address=" + loc;
         $.get(locLink, function (response) {
             console.log(response);
+            $('#official-container').addClass('official-scroll');
             document.getElementById('official-container').innerHTML = '';
             var id = 0;
             for (var x = 0; x < response.offices.length; x++) {
@@ -60,12 +61,17 @@ $(document).ready(function () {
                 }
             }
         });
-        //var thing = "https://www.googleapis.com/civicinfo/v2/voterinfo?key=AIzaSyBRTWesCWcZoIiBVFxanm3BPBkUmOdSbW8&address=" + loc;
+        var thing = "https://www.googleapis.com/civicinfo/v2/voterinfo?key=AIzaSyBRTWesCWcZoIiBVFxanm3BPBkUmOdSbW8&address=" + loc;
+
         //$.get(thing, function (response) {
         //    //This usually doesn't work
         //    console.log(response);
         //    console.log('^ ^ ^ It works ^ ^ ^');
+        //    document.getElementById('polling-container').innerHTML = '';
+        //    document.getElementById('polling-container').innerHTML +=
+        //            '<div class="cell">' + response.election.name + '</div>';
         //});
+        
         $.get("https://www.googleapis.com/civicinfo/v2/elections?key=AIzaSyBRTWesCWcZoIiBVFxanm3BPBkUmOdSbW8", function (response) {
             console.log(response);
             var stateRegex = new RegExp("state:" + state);
