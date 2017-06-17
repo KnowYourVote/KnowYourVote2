@@ -207,7 +207,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Images\MF.jpg" />
+    <Content Include="Images\png.jpg" />
     <Content Include="Images\silhouette.png" />
     <Content Include="Models\KnowYourVoteDB.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -296,8 +296,6 @@
     <Content Include="Scripts\jquery-3.1.1.min.map" />
     <Content Include="Views\View.cshtml" />
     <Content Include="Views\Home\LearnMore.cshtml" />
-    <Content Include="Views\Politicians\View.cshtml" />
-    <Content Include="Views\Politicians\MarciaFudge.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
