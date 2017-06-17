@@ -51,7 +51,8 @@ $(document).ready(function () {
             for (var x = 0; x < response.offices.length; x++) {
                 for (var y = 0; y < response.offices[x].officialIndices.length; y++) {
                     document.getElementById('official-container').innerHTML +=
-                    '<a href="' + response.officials[id].urls + '" target="blank_" class="thumbnail row">' +
+                    //'<a href="' + response.officials[id].urls + '" target="blank_" class="thumbnail row">' +
+                    '<a href= " /Politicians/Index " target="blank_" class="thumbnail row">' +
                     '<div class="col-xs-4">' +
                         '<img src= "' + response.officials[id].photoUrl + '"/>' +
                     '</div> <div class="col-xs-8">' +
