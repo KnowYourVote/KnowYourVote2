@@ -5,7 +5,7 @@
 
 #main-body {
     margin-top: 30px;
-    height: 70vh;
+    min-height: 70vh;
 }
 
 .search-col {
@@ -84,22 +84,40 @@ textarea {
 }
 
 .official-scroll {
-    width: 510px;
+    width: 100%;
     height:410px;
     overflow:scroll;
     overflow-x:hidden;
 }
 
-/* Extra stuff */
 .thumbnail {
     transform: translateX(20px);
     margin-bottom: 10px;
     text-decoration: none !important;
-    width: 480px;
+    width: 98%;
 }
 
 #official-container img{
     transform: translateX(-15px);
     max-width: 150px;
     max-height: 200px;
+}
+
+#election-container {
+    margin-top: 20px;
+}
+
+#election-container .cell {
+    font-size: 16px;
+    padding: 10px;
+
+    background-color: #eee;
+}
+
+#election-container .cell:nth-child(2n) {
+    background-color: #e4e4e4;
+}
+
+#election-container .cell:hover {
+    background-color: #5bc0de;
 }
