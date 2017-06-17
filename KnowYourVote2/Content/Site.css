@@ -121,3 +121,14 @@ textarea {
 #election-container .cell:hover {
     background-color: #5bc0de;
 }
+
+.fudge img {
+    padding-left: 135px;
+}
+.fudge h2 {
+    text-align: center;
+}
+
+.fudgeInfo {
+    padding-top: 70px;
+}

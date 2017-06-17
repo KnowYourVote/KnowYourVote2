@@ -20,6 +20,11 @@ namespace KnowYourVote2.Controllers
             return View(db.Politicians.ToList());
         }
 
+        public ActionResult MarciaFudge()
+        {
+            return View();
+        }
+
         // GET: Politicians/Details/5
         public ActionResult Details(int? id)
         {

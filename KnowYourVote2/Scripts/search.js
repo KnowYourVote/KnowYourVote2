@@ -59,7 +59,7 @@ $(document).ready(function () {
 
                     document.getElementById('official-container').innerHTML +=
                     //'<a href="' + response.officials[id].urls + '" target="blank_" class="thumbnail row">' +
-                    '<a href= " /Politicians/Index " target="blank_" class="thumbnail row">' +
+                    '<a href= " /Politicians/MarciaFudge " target="blank_" class="thumbnail row">' +
                     '<div class="col-xs-4">' +
                         '<img src= "' + image + '"/>' +
                     '</div> <div class="col-xs-8">' +
