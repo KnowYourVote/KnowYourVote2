@@ -122,6 +122,12 @@ textarea {
     background-color: #5bc0de;
 }
 
+/*padding for LearnMore Page*/
+.panel-heading {
+    padding-top: 50px;
+} 
+
+/*Politician Fudge View Classes*/
 .fudge img {
     padding-left: 135px;
 }
