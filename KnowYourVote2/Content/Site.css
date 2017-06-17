@@ -103,3 +103,10 @@ textarea {
     max-width: 150px;
     max-height: 200px;
 }
+
+/*This is for the Learn More Page*/
+
+.panel-heading {
+    padding-top: 50px;
+} 
+
