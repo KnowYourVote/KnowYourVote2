@@ -1,0 +1,19 @@
+﻿body {
+}
+
+.dev-team {
+
+}
+
+.dev-team .thumbnail{
+    text-align: center;
+}
+
+.dev-team .thumbnail img {
+    width: 200px;
+    height: 200px;
+}
+
+.title {
+    margin-top: 3r0px;
+}

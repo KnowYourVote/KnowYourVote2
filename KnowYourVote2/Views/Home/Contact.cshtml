@@ -1,20 +1,47 @@
 ﻿@{
-    ViewBag.Title = "Contact";
+    ViewBag.Title = "About the Team";
 }
-<h2>@ViewBag.Title.</h2>
+<h2 class="title">About the Team</h2>
 
-<p>
+<link href="~/Content/AbootUs.css" rel="stylesheet" />
+
+<blockquote>
     Know Your Vote Ohio is created by four Junior Developers in Cleveland, Ohio. While living in a swing state during the presidential elections,
-    they all witnessed the importance of every national and local vote. They all connected through We Can Code IT coding bootcamp,
-    and collaberation on Know Your Vote as a project. While learning software development they all provide a service that provide knowledge to voters in Ohio.
-</p>
-<p>
+    we witnessed the importance of every national and local vote. We all connected through We Can Code IT coding bootcamp,
+    and collaberation on Know Your Vote as a project. While learning software development we provide a service that provide knowledge to voters in Ohio.<br /><br />
     This application include the following language: <br />
     MVC | C# | ASP.NET | JavaScript | HTML | JQuery
-</p>
-<p>Learn more about the developers:</p>
+</blockquote>
+<h2>Learn more about the developers</h2>
 
-<address>
+<div class="row dev-team">
+    <div class="col-sm-3">
+        <a class="thumbnail" href="https://lilykrichels.github.io/">
+            <img src="~/Images/bitmoji-lily.png" />
+            <h2>Lily</h2>
+        </a>
+    </div>
+    <div class="col-sm-3">
+        <a class="thumbnail" href="https://shirah85.github.io/">
+            <img src="~/Images/bitmoji-shirah.png" />
+            <h2>Shirah</h2>
+        </a>
+    </div>
+    <div class="col-sm-3">
+        <a class="thumbnail" href="https://lesliekornes.github.io/">
+            <img src="~/Images/bitmoji-leslie.png" />
+            <h2>Leslie</h2>
+        </a>
+    </div>
+    <div class="col-sm-3">
+        <a class="thumbnail" href="https://noahsekreter.github.io/">
+            <img src="~/Images/bitmoji-noah.png" />
+            <h2>Noah</h2>
+        </a>
+    </div>
+</div>
+
+@*<address>
     One Microsoft Way<br />
     Redmond, WA 98052-6399<br />
     <abbr title="Phone">P:</abbr>
@@ -24,4 +51,4 @@
 <address>
     <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
     <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+</address>*@
