@@ -133,7 +133,8 @@ textarea {
 
 /*Politician Fudge View Classes*/
 .fudge img {
-    padding-left: 135px;
+    /*padding-left: 135px;*/
+    border-radius: 25px;
 }
 .fudge h2 {
     text-align: center;
