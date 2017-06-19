@@ -110,7 +110,7 @@ textarea {
 #election-container .cell {
     font-size: 16px;
     padding: 10px;
-
+    width: 100%;
     background-color: #eee;
 }
 
@@ -120,6 +120,10 @@ textarea {
 
 #election-container .cell:hover {
     background-color: #5bc0de;
+}
+
+#link-container {
+    margin-top: 10px;
 }
 
 /*padding for LearnMore Page*/

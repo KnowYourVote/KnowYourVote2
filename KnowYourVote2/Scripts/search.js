@@ -42,6 +42,7 @@ $(document).ready(function () {
     });
 
     function searchResult() {
+        $('main-body').removeClass('absolute-center');
         var locLink = "https://www.googleapis.com/civicinfo/v2/representatives?key=AIzaSyBRTWesCWcZoIiBVFxanm3BPBkUmOdSbW8&address=" + loc;
         $.get(locLink, function (response) {
             console.log(response);
@@ -73,14 +74,14 @@ $(document).ready(function () {
         });
         var thing = "https://www.googleapis.com/civicinfo/v2/voterinfo?key=AIzaSyBRTWesCWcZoIiBVFxanm3BPBkUmOdSbW8&address=" + loc;
 
-        //$.get(thing, function (response) {
-        //    //This usually doesn't work
-        //    console.log(response);
-        //    console.log('^ ^ ^ It works ^ ^ ^');
-        //    document.getElementById('polling-container').innerHTML = '';
-        //    document.getElementById('polling-container').innerHTML +=
-        //            '<div class="cell">' + response.election.name + '</div>';
-        //});
+        $.get(thing, function (response) {
+            //This usually doesn't work
+            console.log(response);
+            console.log('^ ^ ^ It works ^ ^ ^');
+            document.getElementById('polling-container').innerHTML = '';
+            document.getElementById('polling-container').innerHTML +=
+                    '<div class="cell">' + response.election.name + '</div>';
+        });
         
         $.get("https://www.googleapis.com/civicinfo/v2/elections?key=AIzaSyBRTWesCWcZoIiBVFxanm3BPBkUmOdSbW8", function (response) {
             console.log(response);
@@ -99,5 +100,8 @@ $(document).ready(function () {
                 });
             }
         });
+
+        document.getElementById('ballot').innerHTML = '';
+        document.getElementById('ballot').innerHTML += '<a href="Images/sample-ballot.PDF">Sample Ballot</a>';
     }
 });
