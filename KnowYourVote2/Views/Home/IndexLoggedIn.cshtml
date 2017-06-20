@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewBag.Title = "IndexLoggedIn";
+    Layout = "~/Views/Shared/_LoggedInLayout.cshtml";
+
+}
+<div id="main-body" class="row">
+    <div class="col-sm-6 search-col absolute-center">
+        <h1>Know Your Vote</h1>
+        <h4>Enter your address. See your politicians. Simple as that</h4>
+        <input id="pac-input" class="controls" type="text" placeholder="Enter Your Address Here"><br />
+        <button id="search" class="btn btn-info">See Results</button>
+        <div id="election-container"></div>
+        <div class="link-container" id="link-container">
+            <a href="https://olvr.sos.state.oh.us/">Register To Vote</a>
+            <div><a href="http://www.sos.state.oh.us/SOS/elections/Voters/absenteeVoting.aspx#byMail">Absentee & Early Voting </a></div>
+            <div id="ballot"></div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div id="official-container"></div>
+    </div>
+</div>
+@* https://olvr.sos.state.oh.us/ *@
+@* http://www.sos.state.oh.us/SOS/elections/Voters/absenteeVoting.aspx *@
+
+<div id="polling-container"></div>
+
+@* You'll need these scripts on the bottom to run the search bar*@
+<script src="~/Scripts/search.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOkccOGtXnDcCfl26Z7B64y8qHRubmhwQ&libraries=places&callback=initAutocomplete"
+        async defer></script>
+

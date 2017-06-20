@@ -1,22 +1,20 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-@* We are keeping the same nav bar on each page with 
-    Home, Get Your Info, About, Contact
-    Add some customization *@
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - Know Your Vote</title>
+    @{
+        ViewBag.Title = "_LoggedInLayout";
+    }
+
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
-    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/readable/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/readable/bootstrap.min.css" rel="stylesheet" />
     <link href="~/Content/Site.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-   <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -35,8 +33,8 @@
                     <li>@Html.ActionLink("Learn About Voting", "LearnMore", "Home")</li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li>@Html.ActionLink("Login", "Login", "Home")</li>
-                    <li>@Html.ActionLink("Sign Up", "Create", "Users")</li>
+                    <li>@Html.ActionLink("Hello, Voter", "Login", "Home")</li>
+                    <li>@Html.ActionLink("Log Out", "Create", "Users")</li>
                 </ul>
             </div>
         </div>
@@ -51,3 +49,5 @@
     @RenderSection("scripts", required: false)
 </body>
 </html>
+<h2>_LoggedInLayout</h2>
+
