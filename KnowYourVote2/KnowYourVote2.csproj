@@ -304,9 +304,11 @@
     <Content Include="Views\View.cshtml" />
     <Content Include="Views\Home\LearnMore.cshtml" />
 
+
     <Content Include="Views\Home\Login.cshtml" />
 
     <Content Include="Views\Politicians\MarciaFudge.cshtml" />
+
 
   </ItemGroup>
   <ItemGroup>
