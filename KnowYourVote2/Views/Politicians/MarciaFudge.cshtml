@@ -1,4 +1,6 @@
-﻿@{
+﻿@model IEnumerable<KnowYourVote2.Models.Comment>
+
+@{
     ViewBag.Title = "MarciaFudge";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
@@ -12,10 +14,14 @@
             <h1 class="panel-title">Marcia Fudge</h1>
         </div>
         <div class="panel-body">
-
             <div class="col-md-6 fudge">
                 @*<h2>Marcia Fudge</h2>*@
-                <img src="~/Images/MF.jpg" />
+                <blockquote>
+                    <img src="~/Images/MF.jpg" />
+                    <p> 4834 Richmond Road, Suite 150</p>
+                  <p>Warrensville Heights, OH 44128</p>
+                    <p>Office: (216) 522-4900</p>
+                </blockquote>
             </div>
             <div class="col-md-6 fudgeInfo">
                 <h2>Position: United States House of Representatives OH-11</h2>
@@ -26,36 +32,70 @@
                     <a href="https://twitter.com/RepMarciaFudge?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fa fa-twitter-square" style="font-size:50px"></i></a>
                     <a href="https://www.linkedin.com/in/marcialfudge/"><i class="fa fa-linkedin-square" style="font-size: 50px"></i></a>
                 </div>
-                <div class="comment-container">
-                    <div class="comment row">
-                        <div class="comment-image col-md-4">
-                            <img src="~/Images/trump.jpg" />
-                            <div>Donald J. Trump</div>
-                        </div>
-                        <div class="comment-text col-md-8">
-                            The concept of Lorem Ipsum was created by and for the Chinese in order to make U.S. design jobs non-competitive. All of the words in Lorem Ipsum have flirted with me - consciously or unconsciously. That's to be expected.
-                        </div>
-                    </div>
-
-                    <div class="comment row">
-                        <div class="comment-image col-md-4">
-                            <img src="~/Images/trump.jpg" />
-                            <div>Donald J. Trump</div>
-                        </div>
-                        <div class="comment-text col-md-8">
-                            The concept of Lorem Ipsum was created by and for the Chinese in order to make U.S. design jobs non-competitive. All of the words in Lorem Ipsum have flirted with me - consciously or unconsciously. That's to be expected.
-                        </div>
-                    </div>
-                </div>
                 <div class="form-group">
                     <label for="comment">Comment:</label>
                     <textarea class="form-control" rows="5" id="comment"></textarea>
+                    <button type="button" class="btn btn-primary">Submit Comment</button>
                 </div>
+            </div>
+        </div> 
+    </div>
+</div>
+
+<div class="container">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h1 class="panel-title">Comments</h1>
+        </div>
+        <div class="panel-body">
+            <div class="col-md-3">
+                <div class="comment-image">
+                    <img src="~/Images/trump.jpg" />
+                    <div>Donald J. Trump</div>
+                </div>
+            </div>
+            <div class="col-md-9 comment-text">
+                The concept of Lorem Ipsum was created by and for the Chinese in order to make U.S. design jobs non-competitive. All of the words in Lorem Ipsum have flirted with me - consciously or unconsciously. That's to be expected.
             </div>
         </div>
 
-
+        <div class="panel-body">
+            <div class="col-md-3">
+                <div class="comment-image">
+                    <img src="~/Images/trump.jpg" />
+                    <div>Donald J. Trump</div>
+                </div>
+            </div>
+            <div class="col-md-9 comment-text">
+                You could see there was text coming out of her eyes, text coming out of her wherever. I'm speaking with myself, number one, because I have a very good brain and I've said a lot of things. We have so many things that we have to do better... and certainly ipsum is one of them.
+            </div>
         </div>
-    
+
+    </div>
 </div>
 
+
+
+@*<div class="panel panel-primary">
+    <h2>Comments</h2>
+    <div class="panel-body comment-container">
+        <div class="comment row">
+            <div class="comment-image col-md-4">
+                <div>Donald J. Trump</div>
+            </div>
+            <div class="comment-text col-md-8">
+                The concept of Lorem Ipsum was created by and for the Chinese in order to make U.S. design jobs non-competitive. All of the words in Lorem Ipsum have flirted with me - consciously or unconsciously. That's to be expected.
+            </div>
+        </div>
+
+        <div class="comment row">
+            <div class="comment-image col-md-4">
+                <img src="~/Images/trump.jpg" />
+                <div>Donald J. Trump</div>
+            </div>
+            <div class="comment-text col-md-8">
+                The concept of Lorem Ipsum was created by and for the Chinese in order to make U.S. design jobs non-competitive. All of the words in Lorem Ipsum have flirted with me - consciously or unconsciously. That's to be expected.
+            </div>
+        </div>
+    </div>
+</div>*@

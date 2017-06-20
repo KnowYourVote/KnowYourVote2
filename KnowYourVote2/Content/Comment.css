@@ -10,8 +10,10 @@
 }
 
 .comment-image img {
-    width: 120px;
-    height: 120px;
+    width: 180px;
+    height: 180px;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
 
 .comment-image {
