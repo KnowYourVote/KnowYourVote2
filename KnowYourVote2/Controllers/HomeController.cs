@@ -32,5 +32,12 @@ namespace KnowYourVote2.Controllers
             ViewBag.Message = "Learn more about our Government here.";
             return View();
         }
+
+        public ActionResult Login()
+        {
+            ViewBag.Message = "Login here.";
+            return View();
+        }
+
     }
 }
