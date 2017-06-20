@@ -129,12 +129,14 @@ textarea {
 /*padding for LearnMore Page*/
 .panel-heading {
     padding-top: 50px;
+   
 } 
 
 /*Politician Fudge View Classes*/
 .fudge img {
     /*padding-left: 135px;*/
     border-radius: 25px;
+    margin: auto; 
 }
 .fudge h2 {
     text-align: center;
@@ -144,3 +146,19 @@ textarea {
     padding-top: 70px;
 }
 
+.fudge{
+    margin: auto;
+    text-align: center; 
+}
+
+.btn btn-primary{
+   margin-top: 30px;
+}
+
+.panel-title{
+    font-size: 35px;
+}
+
+.form-control{
+    width: 300px;
+}
