@@ -303,11 +303,11 @@
     <Content Include="Scripts\jquery-3.1.1.min.map" />
     <Content Include="Views\View.cshtml" />
     <Content Include="Views\Home\LearnMore.cshtml" />
-<<<<<<< HEAD
+
     <Content Include="Views\Politicians\MarciaFudge.cshtml" />
-=======
+
     <Content Include="Views\Home\Login.cshtml" />
->>>>>>> f8b194ada4690d4ff789dd2cd9ef5cd86c0be073
+
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
