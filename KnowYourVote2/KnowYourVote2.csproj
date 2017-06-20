@@ -213,6 +213,8 @@
     <Content Include="Images\bitmoji-lily.png" />
     <Content Include="Images\bitmoji-noah.png" />
     <Content Include="Images\bitmoji-shirah.png" />
+    <Content Include="Images\Flag_of_Ohio.svg.png" />
+    <Content Include="Images\KnowYourVoteOHio.png" />
     <Content Include="Images\png.jpg" />
     <Content Include="Images\silhouette.png" />
     <Content Include="Models\KnowYourVoteDB.Context.tt">

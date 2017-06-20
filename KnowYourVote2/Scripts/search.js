@@ -82,7 +82,8 @@ $(document).ready(function () {
             document.getElementById('polling-container').innerHTML +=
                     '<div class="cell">' + response.election.name + '</div>';
         });
-        
+      
+
         $.get("https://www.googleapis.com/civicinfo/v2/elections?key=AIzaSyBRTWesCWcZoIiBVFxanm3BPBkUmOdSbW8", function (response) {
             console.log(response);
             var stateRegex = new RegExp("state:" + state);
