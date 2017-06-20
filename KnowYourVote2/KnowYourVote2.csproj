@@ -204,6 +204,7 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Comment.css" />
     <Content Include="Content\Login.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -211,10 +212,12 @@
     <Content Include="Content\Site.css" />
     <Content Include="Images\bitmoji-leslie.png" />
     <Content Include="Images\bitmoji-lily.png" />
+    <Content Include="Images\bitmoji-noah-0.png" />
     <Content Include="Images\bitmoji-noah.png" />
     <Content Include="Images\bitmoji-shirah.png" />
     <Content Include="Images\png.jpg" />
     <Content Include="Images\silhouette.png" />
+    <Content Include="Images\trump.jpg" />
     <Content Include="Models\KnowYourVoteDB.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>KnowYourVoteDB.edmx</DependentUpon>
