@@ -2,9 +2,9 @@
 <html>
 <head>
     @{
-        ViewBag.Title = "_LoggedInLayout";
+        ViewBag.Title = "Home";
     }
-
+    <title>@ViewBag.Title - Know Your Vote</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     @Scripts.Render("~/bundles/jquery")
@@ -30,7 +30,7 @@
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("About KYV", "About", "Home")</li>
                     <li>@Html.ActionLink("About The Team", "Contact", "Home")</li>
-                    <li>@Html.ActionLink("Learn About Voting", "LearnMore", "Home")</li>
+                    <li>@Html.ActionLink("Understand Your Vote", "LearnMore", "Home")</li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li>@Html.ActionLink("Hello, Voter", "Login", "Home")</li>
@@ -49,5 +49,3 @@
     @RenderSection("scripts", required: false)
 </body>
 </html>
-<h2>_LoggedInLayout</h2>
-
