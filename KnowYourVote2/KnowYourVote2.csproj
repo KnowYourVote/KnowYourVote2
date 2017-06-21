@@ -218,6 +218,7 @@
     <Content Include="Images\Flag_of_Ohio.svg.png" />
     <Content Include="Images\KnowYourVoteOHio.png" />
     <Content Include="Images\png.jpg" />
+    <Content Include="Images\sherrod-brown.jpg" />
     <Content Include="Images\silhouette.png" />
     <Content Include="Images\trump.jpg" />
     <Content Include="Models\KnowYourVoteDB.Context.tt">
