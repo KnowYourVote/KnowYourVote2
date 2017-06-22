@@ -103,6 +103,6 @@ $(document).ready(function () {
         });
 
         document.getElementById('ballot').innerHTML = '';
-        document.getElementById('ballot').innerHTML += '<a href="Images/sample-ballot.PDF">Sample Ballot</a>';
+        document.getElementById('ballot').innerHTML += '<a href="../Images/sample-ballot.PDF" target="_blank">Sample Ballot</a>';
     }
 });
